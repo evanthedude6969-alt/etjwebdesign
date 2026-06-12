@@ -116,9 +116,14 @@ nav a:hover{
     border:2px solid white;
 }
 
+.btn-outline{
+    background:#2563eb;
+    color:white;
+    border:none;
+}
+
 .btn-outline:hover{
-    background:white;
-    color:#07132b;
+    background:#1d4ed8;
 }
 
 /* SECTIONS */
