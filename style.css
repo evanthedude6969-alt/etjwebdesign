@@ -1,197 +1,125 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #222;
-    background: #f8f9fa;
+body{
+font-family:Arial, sans-serif;
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
 }
 
-header {
-    background: #111827;
-    padding: 15px 0;
+header{
+background:#111827;
+padding:20px 0;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav{
+text-align:center;
 }
 
-.logo img {
-    height: 70px;
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
 }
 
-nav {
-    display: flex;
-    gap: 20px;
+nav a:hover
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:white;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.hero-logo{
+width:350px;
+max-width:80%;
+height:auto;
+margin-bottom:25px;
 }
 
-nav a:hover {
-    opacity: .8;
+.hero h1{
+font-size:2.8rem;
+margin-bottom:15px;
 }
 
-.hero {
-    background: #1f2937;
-    color: white;
-    text-align: center;
-    padding: 120px 20px;
+.hero p{
+max-width:700px;
+margin:auto;
+margin-bottom:25px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+.buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
 }
 
-.hero p {
-    max-width: 700px;
-    margin: auto;
-    margin-bottom: 30px;
-    font-size: 1.1rem;
+.btn{
+background:#2563eb;
+color:white;
+text-decoration:none;
+padding:12px 24px;
+border-radius:6px;
+display:inline-block;
 }
 
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    margin: 5px;
+.btn:hover
+
+.features,
+.featured{
+padding:60px 0;
 }
 
-.btn:hover {
-    opacity: .9;
+.features h2,
+.featured h2{
+text-align:center;
+margin-bottom:30px;
 }
 
-.btn-outline {
-    background: transparent;
-    border: 2px solid white;
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
-.section {
-    padding: 80px 0;
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.2rem;
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:30px 0;
+margin-top:50px;
 }
 
-.dark {
-    background: #111827;
-    color: white;
+@media(max-width:768px){
+
+```
+.hero h1{
+    font-size:2rem;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 25px;
+nav a{
+    display:block;
+    margin:10px 0;
 }
+```
 
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.1);
-}
-
-.dark .card {
-    color: #222;
-}
-
-.card h3 {
-    margin-bottom: 15px;
-}
-
-.card ul {
-    margin-top: 15px;
-    padding-left: 20px;
-}
-
-.price {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 15px 0;
-    color: #2563eb;
-}
-
-.portfolio-card {
-    background: white;
-    color: #222;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.about-text {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-form {
-    max-width: 700px;
-    margin: auto;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-button.btn {
-    border: none;
-    cursor: pointer;
-}
-
-footer {
-    background: #000;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.small {
-    text-align: center;
-    margin-top: 20px;
-    opacity: .8;
-}
-
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
 }
