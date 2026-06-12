@@ -78,7 +78,7 @@ font-size:1.2rem;
 margin-bottom:35px;
 
 ```
-color:#07132b;
+color:#2563eb;
 
 background:none;
 
@@ -88,9 +88,10 @@ border-radius:0;
 
 display:block;
 
-text-shadow:none;
+text-shadow:
+    0 0 8px rgba(255,255,255,.8);
 
-font-weight:600;
+font-weight:700;
 ```
 
 }
